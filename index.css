@@ -1,0 +1,107 @@
+body {
+  background: radial-gradient(closest-side, rgb(118, 118, 118),rgb(0, 0, 0) );
+  min-height: 100vh;
+  color: #fff;
+  text-shadow: 2px 2px 4px black;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  font-size: clamp(1.8rem, 4vw + 1rem, 4.3em);
+  font-weight: bold;
+  animation: runText 10s linear infinite;
+}
+
+@keyframes runText {
+  0% {
+    color: orange;
+  }
+  25% {
+    color: rgb(255, 255, 255);
+  }
+  50% {
+    color: white;
+  }
+  75% {
+    color: rgb(198, 192, 14);
+  }
+  100% {
+    color: orange;
+  }
+}
+
+span {
+  color: orangered;
+}
+
+p {
+  font-size: 1rem;
+  font-family: monospace, serif;
+  width: 70%;
+  text-align: center;
+}
+.CTA_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+.btn_CTA {
+  width: 360px;
+  max-width: 100%;
+  padding: 1rem;
+  margin-top: 2.3rem;
+  background-color: orangered;
+  color: white;
+  border-radius: 1.3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  cursor: pointer;
+}
+.btn_CTA:hover {
+  background-color: rgba(211, 69, 26, 0.884);
+  transform: scale3d(0.9, 1.01, 1.1);
+  transition:all 0.4s;
+}
+
+.card__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 200px;
+}
+
+.s_cards {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 7rem;
+}
+.card {
+  width: 13rem;
+  max-width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.183);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(255, 202, 27);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.card:hover {
+  background-color: #ffffff55;
+  cursor: pointer;
+  transition: all 0.3s;
+}
