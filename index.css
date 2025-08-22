@@ -1,3 +1,5 @@
+@import url('./lazyLoading.css');
+
 body {
   background: radial-gradient(closest-side, rgb(118, 118, 118),rgb(0, 0, 0) );
   min-height: 100vh;
@@ -56,12 +58,14 @@ p {
   max-width: 100%;
   padding: 1rem;
   margin-top: 2.3rem;
+  text-align: center;
+  text-decoration: none;
   background-color: orangered;
   color: white;
   border-radius: 1.3rem;
   font-size: 1.4rem;
   font-weight: 500;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: monospace;
   cursor: pointer;
 }
 .btn_CTA:hover {
@@ -91,17 +95,17 @@ p {
   max-width: 100%;
   height: 10rem;
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: rgba(255, 255, 255, 0.183);
   backdrop-filter: blur(10px);
   border: 1px solid rgb(255, 202, 27);
   border-radius: 10px;
-  padding: 20px;
+  padding: 1rem;
   margin: 0 auto;
 }
 .card:hover {
   background-color: #ffffff55;
-  cursor: pointer;
   transition: all 0.3s;
 }
+
